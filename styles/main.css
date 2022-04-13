@@ -37,6 +37,8 @@ header .container > nav > a{
     text-decoration: none;
     color: #AAAAAA;
     margin-right: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
 }
 
 header .container > nav > a:hover{
@@ -47,7 +49,7 @@ header .container > nav > a:hover{
 .filme-principal{
     font-size:10px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) ,url(../assets/img/akira.jpg);
-    height: 400px;
+    height: 600px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -59,6 +61,7 @@ header .container > nav > a:hover{
 .filme-principal .descricao{
     margin-bottom: 50px;
     margin-top: 15px;
+    width: 70%;
 }
 
 .titulo{
@@ -90,4 +93,34 @@ header .container > nav > a:hover{
     font-size: 16px;
     font-weight: 520;
     text-align: justify;
+}
+
+.box-filme{
+    height:100%; 
+    width: 100%;
+    display: block;
+}
+
+.carrousel-filmes{
+    margin-top: 30px;
+}
+
+/** Responsividade media queries **/
+
+@media screen and (max-width: 768px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    } 
+    .botao{
+        margin-top: 10px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao{
+        width: 50%;
+    }
 }
