@@ -9,9 +9,12 @@
     box-sizing: border-box;
 }
 
+/** Base elements **/
+
 body{
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container{
@@ -38,4 +41,53 @@ header .container > nav > a{
 
 header .container > nav > a:hover{
     color: #FFFFFF;
+}
+
+/** Filme Principal **/
+.filme-principal{
+    font-size:10px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) ,url(../assets/img/akira.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+.titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(255,255,255,1);
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.descricao{
+    font-size: 16px;
+    font-weight: 520;
+    text-align: justify;
 }
